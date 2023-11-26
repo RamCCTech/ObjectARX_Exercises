@@ -1,22 +1,25 @@
-**1.Created a New ObjectARX Project:**
-Created a new ObjectARX project in Microsoft Visual Studio as an MFC (Microsoft Foundation Classes) Dynamic Link-Library (DLL) with a DLL extension.
-This sets up the project structure for developing AutoCAD applications.
-
-**2.Configured the Project for ObjectARX:**
-Configured the project to build an ObjectARX application by making necessary changes in the C++ and Linker properties.
- This involves setting the necessary compilation and linking options to enable ObjectARX development.
-
-**3.Added Required Libraries:**
-Added all required libraries in the project's properties settings.
- This includes linking against the ObjectARX libraries and any other dependencies needed for developing AutoCAD applications.
-
-**4.Defined acrxEntryPoint Function:**
-Defined the acrxEntryPoint function. This function serves as the entry point for the ObjectARX application.
- It handles initialization and unloading messages, such as AcRx::kInitAppMsg and AcRx::kUnloadAppMsg.
-
-**Implemented Command for Message Display:**
-Implemented code to display the message "Hello in the world of AutoCAD" when the command "MYCOMMAND" is entered in AutoCAD. 
-This involves defining a custom command function (e.g., MyCommand) and registering it using acedRegCmds->addCommand.
-
-In summary, the described steps outline the process of creating an ObjectARX project, configuring it for AutoCAD development, adding necessary libraries, 
-defining the entry point function, and implementing a custom command to display a specific message in the AutoCAD environment.
+## Project Overview
+ 
+This project serves as a template for developing ObjectARX applications in the AutoCAD environment. It is set up as an MFC (Microsoft Foundation Classes) Dynamic Link-Library (DLL) with a DLL extension.
+ 
+## Setup Instructions
+ 
+1. **Create a New ObjectARX Project:**
+   - Open Microsoft Visual Studio.
+   - Create a new project as an MFC Dynamic Link-Library (DLL) with a DLL extension.
+2. **Configure the Project for ObjectARX:**
+   - Modify C++ and Linker properties to set up the project for ObjectARX development.
+3. **Add Required Libraries:**
+   - In the project's properties settings, link against ObjectARX libraries and any other dependencies needed for AutoCAD applications.
+4. **Define acrxEntryPoint Function:**
+   - Define the `acrxEntryPoint` function, serving as the entry point for the ObjectARX application.
+   - Handle initialization and unloading messages, such as `AcRx::kInitAppMsg` and `AcRx::kUnloadAppMsg`.
+5. **Implement Command for Message Display:**
+   - Implement code to display the message "Hello in the world of AutoCAD" when the command "AddCommand" is entered in AutoCAD.
+   - Define a custom command function (e.g., `addCommand`) and register it using `acedRegCmds->addCommand`.
+ 
+## Usage
+ 
+1. Build the project in Microsoft Visual Studio.
+2. Load the resulting DLL in AutoCAD.
+3. Enter the command "AddCommand" to see the message in the AutoCAD environment.
